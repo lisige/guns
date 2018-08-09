@@ -1,0 +1,67 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="id" name="序列号" value="${item.id}" underline="true"/>
+                            <#input id="userAccount" name="用户名" value="${item.userAccount}" underline="true"/>
+                            <#input id="userPassword" name="用户密码" value="${item.userPassword}" underline="true"/>
+                            <#input id="transactionPassword" name="交易密码" value="${item.transactionPassword}" underline="true"/>
+                            <#input id="userPhone" name="用户手机号码" value="${item.userPhone}" underline="true"/>
+                            <#input id="userName" name="用户姓名" value="${item.userName}" underline="true"/>
+                            <#input id="userCardNo" name="用户身份证号" value="${item.userCardNo}" underline="true"/>
+                            <#input id="userEducation" name="学历" value="${item.userEducation}" underline="true"/>
+                            <#input id="userMarriage" name="婚姻状态(1:已婚，0：未婚)" value="${item.userMarriage}" underline="true"/>
+                            <#input id="userProvince" name="省" value="${item.userProvince}" underline="true"/>
+                            <#input id="userCity" name="市" value="${item.userCity}" underline="true"/>
+                            <#input id="userArea" name="区" value="${item.userArea}" underline="true"/>
+                            <#input id="userAddress" name="用户详细地址" value="${item.userAddress}" underline="true"/>
+                            <#input id="lengthOfStay" name="居住时长" value="${item.lengthOfStay}" underline="true"/>
+                            <#input id="isBlack" name="是否黑名单（1:是，0：否）" value="${item.isBlack}" underline="true"/>
+                            <#input id="isVerified" name="是否实名认证（1：是，0：否）" value="${item.isVerified}" underline="true"/>
+                            <#input id="verifiedTime" name="实名认证时间" value="${item.verifiedTime}" underline="true"/>
+                            <#input id="cardCode" name="银行卡号" value="${item.cardCode}" underline="true"/>
+                            <#input id="cardType" name="所属银行" value="${item.cardType}" underline="true"/>
+                            <#input id="cardPhone" name="银行卡预留手机号" value="${item.cardPhone}" underline="true"/>
+                            <#input id="isPhone" name="是否提交了通讯录（1：是，0：否）" value="${item.isPhone}" />
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="phoneTime" name="提交通讯录时间" value="${item.phoneTime}" underline="true"/>
+                            <#input id="isCard" name="是否绑定银行卡（1：是，0：否）" value="${item.isCard}" underline="true"/>
+                            <#input id="cardTime" name="绑卡时间" value="${item.cardTime}" underline="true"/>
+                            <#input id="operatorPassword" name="运营商服务器密码" value="${item.operatorPassword}" underline="true"/>
+                            <#input id="isOperator" name="运营商认证（1：是，0：否）" value="${item.isOperator}" underline="true"/>
+                            <#input id="operatorTime" name="运营商认证时间" value="${item.operatorTime}" underline="true"/>
+                            <#input id="createTime" name="添加时间" value="${item.createTime}" underline="true"/>
+                            <#input id="updateTime" name="修改时间" value="${item.updateTime}" underline="true"/>
+                            <#input id="humanFaceImg" name="人脸照片地址" value="${item.humanFaceImg}" underline="true"/>
+                            <#input id="humanFaceImgUrl" name="图片外部访问路径" value="${item.humanFaceImgUrl}" underline="true"/>
+                            <#input id="cardPositiveImg" name="身份证正面照片" value="${item.cardPositiveImg}" underline="true"/>
+                            <#input id="cardPositiveImgUrl" name="身份证正面图片外部访问地址" value="${item.cardPositiveImgUrl}" underline="true"/>
+                            <#input id="cardAntiImg" name="身份证反面图片" value="${item.cardAntiImg}" underline="true"/>
+                            <#input id="cardAntiImgUrl" name="身份证反面图片外部访问地址" value="${item.cardAntiImgUrl}" underline="true"/>
+                            <#input id="isWindControl" name="风控评估（1：通过，0：不通过，2：评估中）" value="${item.isWindControl}" underline="true"/>
+                            <#input id="status" name="是否有有效（0：有效，1：无效）" value="${item.status}" underline="true"/>
+                            <#input id="channelId" name="渠道id" value="${item.channelId}" underline="true"/>
+                            <#input id="isZhima" name="是否芝麻授权（1：是，0：否）" value="${item.isZhima}" underline="true"/>
+                            <#input id="zhimaScore" name="芝麻分" value="${item.zhimaScore}" underline="true"/>
+                            <#input id="zmAuthTime" name="最近一次芝麻认证时间" value="${item.zmAuthTime}" underline="true"/>
+                            <#input id="isOld" name="是否老用户 0否 1是" value="${item.isOld}" />
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="BorrowUserInfoDlg.editSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="BorrowUserInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/borrowuser/borrowUser/borrowUser_info.js"></script>
+@}

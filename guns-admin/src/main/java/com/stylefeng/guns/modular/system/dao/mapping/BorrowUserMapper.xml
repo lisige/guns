@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.stylefeng.guns.modular.system.dao.BorrowUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.stylefeng.guns.modular.system.model.BorrowUser">
+        <id column="id" property="id" />
+        <result column="userAccount" property="userAccount" />
+        <result column="userPassword" property="userPassword" />
+        <result column="transactionPassword" property="transactionPassword" />
+        <result column="userPhone" property="userPhone" />
+        <result column="userName" property="userName" />
+        <result column="userCardNo" property="userCardNo" />
+        <result column="userEducation" property="userEducation" />
+        <result column="userMarriage" property="userMarriage" />
+        <result column="userProvince" property="userProvince" />
+        <result column="userCity" property="userCity" />
+        <result column="userArea" property="userArea" />
+        <result column="userAddress" property="userAddress" />
+        <result column="lengthOfStay" property="lengthOfStay" />
+        <result column="isBlack" property="isBlack" />
+        <result column="isVerified" property="isVerified" />
+        <result column="verifiedTime" property="verifiedTime" />
+        <result column="cardCode" property="cardCode" />
+        <result column="cardType" property="cardType" />
+        <result column="cardPhone" property="cardPhone" />
+        <result column="isPhone" property="isPhone" />
+        <result column="phoneTime" property="phoneTime" />
+        <result column="isCard" property="isCard" />
+        <result column="cardTime" property="cardTime" />
+        <result column="operatorPassword" property="operatorPassword" />
+        <result column="isOperator" property="isOperator" />
+        <result column="operatorTime" property="operatorTime" />
+        <result column="createTime" property="createTime" />
+        <result column="updateTime" property="updateTime" />
+        <result column="humanFaceImg" property="humanFaceImg" />
+        <result column="humanFaceImgUrl" property="humanFaceImgUrl" />
+        <result column="cardPositiveImg" property="cardPositiveImg" />
+        <result column="cardPositiveImgUrl" property="cardPositiveImgUrl" />
+        <result column="cardAntiImg" property="cardAntiImg" />
+        <result column="cardAntiImgUrl" property="cardAntiImgUrl" />
+        <result column="isWindControl" property="isWindControl" />
+        <result column="status" property="status" />
+        <result column="channelId" property="channelId" />
+        <result column="isZhima" property="isZhima" />
+        <result column="zhimaScore" property="zhimaScore" />
+        <result column="zmAuthTime" property="zmAuthTime" />
+        <result column="isOld" property="isOld" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userAccount, userPassword, transactionPassword, userPhone, userName, userCardNo, userEducation, userMarriage, userProvince, userCity, userArea, userAddress, lengthOfStay, isBlack, isVerified, verifiedTime, cardCode, cardType, cardPhone, isPhone, phoneTime, isCard, cardTime, operatorPassword, isOperator, operatorTime, createTime, updateTime, humanFaceImg, humanFaceImgUrl, cardPositiveImg, cardPositiveImgUrl, cardAntiImg, cardAntiImgUrl, isWindControl, status, channelId, isZhima, zhimaScore, zmAuthTime, isOld
+    </sql>
+
+</mapper>
